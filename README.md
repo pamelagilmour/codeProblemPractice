@@ -1,4 +1,9 @@
-# hkrrnkpractice
-Pam's HackerRank Practice 
+#Pam's Code Problem Practice 
 
-Staying sharp with my problem solving skills.
+Staying sharp with my problem solving skills on:
+- HackerRank
+- CodeWars
+- Interview Cake, maybe
+
+
+
