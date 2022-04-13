@@ -7,7 +7,9 @@ Staying fresh with problem solving with:
 
 ## Log
 
+
 Note: @ HackerRank, start with Tutorials > 10 Days of Javascript.
+
 
 Day 1: Set up Repo for project, folders for hackerrank, and codewars. Started on formatting. 
 
