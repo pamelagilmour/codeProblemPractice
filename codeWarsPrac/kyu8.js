@@ -27,8 +27,34 @@ makeNegative(42)
 
 // Sample Tests
 
-describe('Tests', () => {
-	it('test', () => {
-		Test.assertEquals(makeNegative(42), -42);
-	});
-});
+// describe('Tests', () => {
+// 	it('test', () => {
+// 		Test.assertEquals(makeNegative(42), -42);
+// 	});
+// });
+
+// Other Solutions that I liked
+
+// One of my first attempts looked like this, but I forgot to add 'return' keyword
+
+// function makeNegative(num) {
+// 	return -Math.abs(num);
+// }
+
+// const makeNegative = (num) => -Math.abs(num)
+
+// More concise than my solution
+
+// function makeNegative(num) {
+// 	return num < 0 ? num : -num;
+// }
+
+// makeNegative = (n) => -Math.abs(n);
+
+// function makeNegative(num) {
+// 	if (num > 0) {
+// 		return -num;
+// 	} else {
+// 		return num;
+// 	}
+// }
