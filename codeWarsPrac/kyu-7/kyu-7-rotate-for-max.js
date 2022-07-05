@@ -37,35 +37,37 @@
 
 //     max_rot(38458215) should return 85821534
 
-https://github.com/Automedon/CodeWars-7-kyu-Soluitions/blob/master/Rotate%20for%20a%20Max
+// https://github.com/Automedon/CodeWars-7-kyu-Soluitions/blob/master/Rotate%20for%20a%20Max
+
 function maxRot(n) {
 
-    let val = String(n);
-    let headArrs = [];
-    let tailArrs = [];
+    let cstring = n.toString();
 
-    // let count = val.length;
-    // console.log(val, count);
+    let finNums = [];
+    finNums.push(parseInt(cstring));
 
-    for(let i = 0; i < val.length; i++){
-        console.log(val[i]);
-        console.log(val.slice(i))
+    for (let i = 0; i < cstring.length; i++) {
+
+        cstring = cstring.slice(0,i) + cstring.slice(i+1) + cstring[i];
+
+        finNums.push(parseInt(cstring));
+
+        
+    }
+
+    let max = 0;
+
+    for (let i = 0; i < finNums.length; i++) {
+        if (finNums[i] > max) {
+            max = finNums[i];
+        }
 
     }
 
-
-
-
-
-
-
-
-   
-
-
+    return max;
 }
 
-maxRot(56789);
+console.log(maxRot(56789));
 // maxRot(38458215);
 
 // function maxRot(n) {
