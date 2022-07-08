@@ -18,11 +18,14 @@ class HashMap {
   assign(key, value) {
     const arrayIndex = this.hash(key);
     const linkedList = this.hashmap[arrayIndex];
+
     if (linkedList.head === null) {
       linkedList.addToHead({ key, value });
       return;
     }
+    
     let current = linkedList.head;
+
     while (current) {
       if (current.data.key === key) {
         current.data = { key, value };
