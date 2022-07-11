@@ -1,3 +1,5 @@
+//Completed
+
 function likeOrDislike(buttons) {
     if(buttons.length === 1){
         return buttons[0]
